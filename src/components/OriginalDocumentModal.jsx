@@ -25,23 +25,17 @@ const OriginalDocumentModal = ({ verificationData, setShowModal }) => {
         >
           {/* Modal container */}
           <div className="">
-            <div className="bg-white  w-full max-w-5xl max-h-screen overflow-auto">
+            <div className="w-full max-w-5xl max-h-screen overflow-auto">
               {verificationData?.map((doc, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center gap-2 mb-4"
+                  className="flex flex-col items-center gap-4 mb-4"
                 >
-                  {loading ? (
-                    <div className="flex items-center justify-center h-screen">
-                      <span className="loaders"></span>
-                    </div>
-                  ) : (
-                    <img
-                      src={doc}
-                      alt={`Document ${index + 1}`}
-                      className="w-full"
-                    />
-                  )}
+                  <img
+                    src={doc}
+                    alt={`Document ${index + 1}`}
+                    className="w-full"
+                  />
                 </div>
               ))}
               <button
