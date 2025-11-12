@@ -34,8 +34,13 @@ export default function UserPage() {
 
   if (loading || !id)
     return (
-      <div className="flex items-center justify-center h-screen">
-        <span className="loader"></span>
+      <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50">
+        {/* Modal container */}
+        <div className="w-full max-w-3xl rounded-2xl overflow-hidden transform transition-all scale-100">
+          <div className="flex items-center justify-center h-screen">
+            <span className="loader"></span>
+          </div>
+        </div>
       </div>
     );
   if (!verificationData)
