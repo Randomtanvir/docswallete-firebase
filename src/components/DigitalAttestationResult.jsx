@@ -64,7 +64,7 @@ const DigitalAttestationResult = ({ verificationData }) => {
               </div>
 
               {/* English Title */}
-              <div className="leading-[1.2] mr-32 text-left font-[Calibri] mb-3 md:hidden block text-[32px] text-[#49afcd] font-bold">
+              <div className="leading-[1.2] mr-20 text-left font-[Calibri] mb-3 md:hidden block text-[32px] text-[#49afcd] font-bold">
                 Digital <br /> Attestation <br /> Result
               </div>
               <div className="leading-[1.2] text-center hidden md:block mb-5 text-[32px] text-[#49afcd] font-[Calibri]  font-bold">
