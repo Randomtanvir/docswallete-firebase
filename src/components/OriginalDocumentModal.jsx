@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { waitAndReturnFalse } from "../lib";
-import { Loader } from "lucide-react";
 
 const OriginalDocumentModal = ({ verificationData, setShowModal }) => {
   const [loading, setLoading] = useState(true);
@@ -17,7 +16,7 @@ const OriginalDocumentModal = ({ verificationData, setShowModal }) => {
     <>
       {loading ? (
         <div className="flex items-center justify-center h-screen">
-          <Loader className="size-10 opacity-60 animate-spin" />
+          <span className="loaders"></span>
         </div>
       ) : (
         <div
@@ -32,11 +31,17 @@ const OriginalDocumentModal = ({ verificationData, setShowModal }) => {
                   key={index}
                   className="flex flex-col items-center gap-2 mb-4"
                 >
-                  <img
-                    src={doc}
-                    alt={`Document ${index + 1}`}
-                    className="w-full"
-                  />
+                  {loading ? (
+                    <div className="flex items-center justify-center h-screen">
+                      <span className="loaders"></span>
+                    </div>
+                  ) : (
+                    <img
+                      src={doc}
+                      alt={`Document ${index + 1}`}
+                      className="w-full"
+                    />
+                  )}
                 </div>
               ))}
               <button
