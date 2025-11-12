@@ -8,6 +8,10 @@
   --font-secondery: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   background-color: #f6f7fa;
 }
