@@ -16,8 +16,6 @@ const DigitalAttestationResult = ({ verificationData }) => {
     SetToggle(true);
     const result = await waitAndReturnFalse();
     SetToggle(result);
-    console.log(isTrue);
-
     isTrue ? setShowAttModal(true) : setShowModal(true);
   };
 
@@ -66,8 +64,8 @@ const DigitalAttestationResult = ({ verificationData }) => {
               </div>
 
               {/* English Title */}
-              <div className="leading-[1.2] font-[Calibri] mb-3 md:hidden block text-[32px] text-[#49afcd] font-bold">
-                Digital Attestation <br /> Result
+              <div className="leading-[1.2] mr-36 text-left font-[Calibri] mb-3 md:hidden block text-[32px] text-[#49afcd] font-bold">
+                Digital <br /> Attestation <br /> Result
               </div>
               <div className="leading-[1.2] text-center hidden md:block mb-5 text-[32px] text-[#49afcd] font-[Calibri]  font-bold">
                 Digital Attestation Result

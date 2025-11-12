@@ -41,7 +41,7 @@ export const getPaginatedVerificationData = async (
     // 🔹 Build query with sort + pagination
     let q = query(
       collection(db, "verifications"),
-      orderBy("transactionNumber", "asc"),
+      orderBy("transactionNumber", "desc"),
       limit(pageSize)
     );
 
@@ -49,7 +49,7 @@ export const getPaginatedVerificationData = async (
     if (lastDoc) {
       q = query(
         collection(db, "verifications"),
-        orderBy("transactionNumber", "asc"),
+        orderBy("transactionNumber", "desc"),
         startAfter(lastDoc),
         limit(pageSize)
       );

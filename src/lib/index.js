@@ -10,10 +10,10 @@ export function generateEncodedString(length = 16) {
   return encodeURIComponent(base64String);
 }
 
-export const waitAndReturnFalse = async () => {
+export const waitAndReturnFalse = async (time = 600) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(false);
-    }, 600); // 2000ms = 2 seconds
+    }, time); // 2000ms = 2 seconds
   });
 };

@@ -56,7 +56,7 @@ const VerificationCard = ({ VerificationData, index }) => {
           </div>
 
           <p className="text-sm text-gray-500">
-            Phone No: {VerificationData?.phoneNumber}
+            Transaction Number: {VerificationData?.transactionNumber}
           </p>
 
           <span
