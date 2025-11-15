@@ -112,7 +112,7 @@ body {
 
 /* HTML: <div class="loader"></div> */
 .loaders {
-  width: 50px;
+  width: 16px;
   aspect-ratio: 1;
   display: grid;
   border-radius: 50%;
