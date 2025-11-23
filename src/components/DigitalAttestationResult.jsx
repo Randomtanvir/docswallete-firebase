@@ -42,7 +42,7 @@ const DigitalAttestationResult = ({ verificationData }) => {
               {/* Left Logo */}
 
               <img
-                src="https://omanpostapi.docswallet.com/pdf/document_repository/images/logo/oman_logo.png"
+                src="/logo1.png"
                 alt="Oman Post"
                 className="lg:w-[250px] md:w-[170px] w-[100px]"
               />
@@ -50,7 +50,7 @@ const DigitalAttestationResult = ({ verificationData }) => {
               {/* Right Logo */}
 
               <img
-                src="https://omanpostapi.docswallet.com/pdf/document_repository/images/images/khanjar.jpg"
+                src="/logo2.png"
                 alt="Ministry Logo"
                 className="lg:w-[180px] md:w-[130px] w-20"
               />
